@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -37,9 +38,9 @@ export const Hero = () => {
             className="text-base px-8"
             asChild
           >
-            <a href="#services">
+            <Link to="/services">
               Explore services
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
