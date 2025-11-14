@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import decodeLogo from "@/assets/decode-logo.webp";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -15,10 +16,12 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <a href="#home" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold tracking-tight">
-            DEC<span className="text-primary">ODE</span>
-          </span>
+        <a href="#home" className="flex items-center">
+          <img 
+            src={decodeLogo} 
+            alt="Decode Development" 
+            className="h-8 w-auto"
+          />
         </a>
         
         <nav className="hidden md:flex items-center gap-6">
