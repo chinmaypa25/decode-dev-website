@@ -7,7 +7,7 @@ export const Hero = () => {
       {/* Subtle gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none" />
       
-      <div className="relative max-w-[820px] mx-auto md:mx-0 text-center md:text-left space-y-8">
+      <div className="relative max-w-[820px] mx-auto text-center space-y-8">
         {/* Kicker */}
         <p className="text-sm md:text-base text-muted-foreground font-medium tracking-wide uppercase">
           Boutique South African Software Studio
@@ -27,7 +27,7 @@ export const Hero = () => {
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 md:justify-start justify-center items-center pt-6">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
           <Button 
             size="lg" 
             className="text-base px-8 w-full sm:w-auto"
