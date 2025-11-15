@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import decodeLogo from "@/assets/decode-logo.webp";
-import { Link } from "react-router-dom";
+import { NavLink } from "@/components/NavLink";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -16,24 +16,26 @@ const navItems = [
 export const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link to="/" className="flex items-center">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4">
+        <NavLink to="/" className="flex items-center">
           <img 
             src={decodeLogo} 
             alt="Decode Development" 
             className="h-8 w-auto"
           />
-        </Link>
+        </NavLink>
         
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <Link
+            <NavLink
               key={item.href}
               to={item.href}
-              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+              className="relative text-sm font-medium text-foreground/70 hover:text-foreground transition-colors group"
+              activeClassName="text-foreground"
             >
               {item.label}
-            </Link>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </NavLink>
           ))}
         </nav>
 

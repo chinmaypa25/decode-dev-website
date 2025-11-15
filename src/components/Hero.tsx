@@ -3,46 +3,57 @@ import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
-    <section id="home" className="container mx-auto px-4 py-24 md:py-32">
-      <div className="max-w-5xl mx-auto text-center space-y-8">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
-          expanding <span className="text-primary">access</span>,{" "}
-          <br className="hidden sm:block" />
-          accelerating <span className="text-primary">learning</span>
-          <br className="hidden sm:block" />
-          and saving <span className="text-primary">lives</span>
-          <br className="hidden sm:block" />
-          with bespoke <span className="text-primary">software</span> products
-        </h1>
-
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          A boutique South African software development company driven by the vision to craft 
-          impactful technology that enhances business—no matter the industry. We believe technology 
-          should improve and simplify operations, freeing you to scale instead of maintain.
+    <section id="home" className="relative container mx-auto px-4 py-24 md:py-32 lg:py-40 overflow-hidden">
+      {/* Subtle gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none" />
+      
+      <div className="relative max-w-[820px] mx-auto md:mx-0 text-center md:text-left space-y-8">
+        {/* Kicker */}
+        <p className="text-sm md:text-base text-muted-foreground font-medium tracking-wide uppercase">
+          Boutique South African Software Studio
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+        {/* Headline */}
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] tracking-tight">
+          Expanding <span className="text-primary">Access</span>, Accelerating <span className="text-primary">Learning</span>,
+          <br className="hidden sm:block" />
+          And Saving Lives With Bespoke Software Products
+        </h1>
+
+        {/* Subheading */}
+        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-[700px]">
+          A boutique South African software development company crafting impactful, 
+          high-quality technology that frees you to scale — not maintain.
+        </p>
+
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row gap-4 md:justify-start justify-center items-center pt-6">
           <Button 
             size="lg" 
-            className="text-base px-8"
+            className="text-base px-8 w-full sm:w-auto"
             asChild
           >
             <a href="mailto:domicilium@decodedev.co.za">
-              Start a conversation
+              Start a Conversation
             </a>
           </Button>
           
           <Button 
             variant="outline" 
             size="lg" 
-            className="text-base px-8"
+            className="text-base px-8 w-full sm:w-auto"
             asChild
           >
             <Link to="/services">
-              Explore services
+              Explore Services
             </Link>
           </Button>
         </div>
+
+        {/* Micro-copy */}
+        <p className="text-sm text-muted-foreground/80 pt-2">
+          We reply within 1–2 business days.
+        </p>
       </div>
     </section>
   );
