@@ -14,7 +14,7 @@ export const Hero = () => {
         </p>
 
         {/* Headline */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] tracking-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.3] tracking-tight">
           Expanding <span className="text-primary">Access</span>, Accelerating <span className="text-primary">Learning</span>,
           <br className="hidden sm:block" />
           And Saving Lives With Bespoke Software Products
