@@ -3,34 +3,37 @@ import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
-    <section id="home" className="relative container mx-auto px-4 py-24 md:py-32 lg:py-40 overflow-hidden">
-      {/* Subtle gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none" />
+    <section id="home" className="relative container mx-auto px-4 py-32 md:py-40 lg:py-48 overflow-hidden">
+      {/* Elegant gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-primary/3 to-transparent pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       
-      <div className="relative max-w-[820px] mx-auto text-center space-y-8">
+      <div className="relative max-w-[820px] mx-auto text-center space-y-10 animate-fade-in">
         {/* Kicker */}
-        <p className="text-sm md:text-base text-muted-foreground font-medium tracking-wide uppercase">
-          Boutique South African Software Studio
-        </p>
+        <div className="inline-block">
+          <p className="text-xs md:text-sm text-muted-foreground/80 font-medium tracking-[0.2em] uppercase">
+            Boutique South African Software Studio
+          </p>
+        </div>
 
         {/* Headline */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.3] tracking-tight">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.4] tracking-tight">
           Expanding <span className="text-primary">Access</span>, Accelerating <span className="text-primary">Learning</span>,
           <br className="hidden sm:block" />
           And Saving Lives With Bespoke Software Products
         </h1>
 
         {/* Subheading */}
-        <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-[700px]">
+        <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-[680px] mx-auto">
           A boutique South African software development company crafting impactful, 
           high-quality technology that frees you to scale — not maintain.
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
           <Button 
             size="lg" 
-            className="text-base px-8 w-full sm:w-auto"
+            className="text-base px-10 py-6 w-full sm:w-auto shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105"
             asChild
           >
             <a href="mailto:domicilium@decodedev.co.za">
@@ -41,7 +44,7 @@ export const Hero = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="text-base px-8 w-full sm:w-auto"
+            className="text-base px-10 py-6 w-full sm:w-auto border-2 hover:bg-primary/5 transition-all duration-300"
             asChild
           >
             <Link to="/services">
@@ -51,7 +54,7 @@ export const Hero = () => {
         </div>
 
         {/* Micro-copy */}
-        <p className="text-sm text-muted-foreground/80 pt-2">
+        <p className="text-xs md:text-sm text-muted-foreground/70 pt-4">
           We reply within 1–2 business days.
         </p>
       </div>
