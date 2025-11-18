@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-primary/3 to-transparent pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       
-      <div className="relative max-w-[820px] mx-auto text-center space-y-10 animate-fade-in">
+      <div className="relative max-w-[820px] mx-auto text-center space-y-12 animate-fade-in">
         {/* Kicker */}
         <div className="inline-block">
           <p className="text-xs md:text-sm text-muted-foreground/80 font-medium tracking-[0.2em] uppercase">
@@ -17,7 +17,7 @@ export const Hero = () => {
         </div>
 
         {/* Headline */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.4] tracking-tight">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.5] tracking-tight max-w-[760px] mx-auto">
           Expanding <span className="text-primary">Access</span>, Accelerating <span className="text-primary">Learning</span>,
           <br className="hidden sm:block" />
           And Saving Lives With Bespoke Software Products
@@ -30,7 +30,7 @@ export const Hero = () => {
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-10">
           <Button 
             size="lg" 
             className="text-base px-10 py-6 w-full sm:w-auto shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105"
@@ -54,7 +54,7 @@ export const Hero = () => {
         </div>
 
         {/* Micro-copy */}
-        <p className="text-xs md:text-sm text-muted-foreground/70 pt-4">
+        <p className="text-xs md:text-sm text-muted-foreground/70 pt-5">
           We reply within 1–2 business days.
         </p>
       </div>
