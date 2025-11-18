@@ -14,14 +14,14 @@ export const Hero = () => {
         </p>
 
         {/* Headline */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.3] tracking-tight">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.3] tracking-tight">
           Expanding <span className="text-primary">Access</span>, Accelerating <span className="text-primary">Learning</span>,
           <br className="hidden sm:block" />
           And Saving Lives With Bespoke Software Products
         </h1>
 
         {/* Subheading */}
-        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-[700px]">
+        <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-[700px]">
           A boutique South African software development company crafting impactful, 
           high-quality technology that frees you to scale — not maintain.
         </p>
