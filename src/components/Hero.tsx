@@ -17,10 +17,14 @@ export const Hero = () => {
         </div>
 
         {/* Headline */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.5] tracking-tight max-w-[760px] mx-auto">
-          Expanding <span className="text-primary">Access</span>, Accelerating <span className="text-primary">Learning</span>,
-          <br className="hidden sm:block" />
-          And Saving Lives With Bespoke Software Products
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[2.0] tracking-tight max-w-[760px] mx-auto">
+          Expanding <span className="text-primary">Access</span>,
+          <br />
+          Accelerating <span className="text-primary">Learning</span>,
+          <br />
+          And Saving Lives
+          <br />
+          With Bespoke Software Products
         </h1>
 
         {/* Subheading */}
