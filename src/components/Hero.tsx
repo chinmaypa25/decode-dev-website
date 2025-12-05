@@ -93,14 +93,10 @@ export const Hero = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[2.0] tracking-tight max-w-[760px] mb-12 text-center mx-auto">
-            Expanding <span className="text-primary">Access</span>,
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold leading-[1.3] tracking-tight max-w-[760px] mb-12 text-center mx-auto">
+            Purpose-Driven <span className="text-primary">Software</span>,
             <br />
-            Accelerating <span className="text-primary">Learning</span>,
-            <br />
-            And Saving Lives
-            <br />
-            With Bespoke Software Products
+            Built for <span className="text-primary">Impact</span>.
           </h1>
 
           {/* Subheading */}
