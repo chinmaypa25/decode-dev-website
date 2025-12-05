@@ -93,7 +93,7 @@ export const Hero = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[2.0] tracking-tight max-w-[760px] mb-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.8] tracking-tight max-w-[760px] mb-10">
             Expanding <span className="text-primary">Access</span>,
             <br />
             Accelerating <span className="text-primary">Learning</span>,
@@ -104,7 +104,7 @@ export const Hero = () => {
           </h1>
 
           {/* Subheading */}
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-[680px] mb-10">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-[680px] mb-12">
             A boutique South African software development company crafting impactful, 
             high-quality technology that frees you to scale — not maintain.
           </p>
