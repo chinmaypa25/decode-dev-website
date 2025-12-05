@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
-    <section id="home" className="relative container mx-auto px-4 py-32 md:py-40 lg:py-48 overflow-hidden">
-      {/* Elegant gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-primary/3 to-transparent pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+    <section id="home" className="hero-wrapper container mx-auto px-4 py-32 md:py-40 lg:py-48">
+      {/* Animated gradient glow */}
+      <div className="hero-glow" aria-hidden="true" />
       
       <div className="relative max-w-[820px] mx-auto text-center space-y-12 animate-fade-in">
         {/* Kicker */}
