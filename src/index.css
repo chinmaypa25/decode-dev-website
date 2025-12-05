@@ -85,6 +85,24 @@ All colors MUST be HSL.
   .hero-wrapper {
     position: relative;
     overflow: hidden;
+    padding-block: 64px;
+  }
+
+  .hero-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+  }
+
+  .hero-text {
+    flex: 1.4;
+  }
+
+  .hero-mockup {
+    flex: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .hero-glow {
@@ -116,6 +134,104 @@ All colors MUST be HSL.
     50% {
       opacity: 1;
       transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+
+  /* Code window mockup */
+  .code-window {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 18px;
+    background: #020617;
+    box-shadow: 0 22px 60px rgba(15, 23, 42, 0.6);
+    overflow: hidden;
+    font-family: "SF Mono", Menlo, Monaco, monospace;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    animation: floatWindow 10s ease-in-out infinite alternate;
+  }
+
+  .code-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: linear-gradient(to right, #111827, #020617);
+    border-bottom: 1px solid rgba(31, 41, 55, 0.9);
+  }
+
+  .code-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+  }
+
+  .code-dot-red { background: #ef4444; }
+  .code-dot-yellow { background: #f59e0b; }
+  .code-dot-green { background: #22c55e; }
+
+  .code-title {
+    margin-left: auto;
+    font-size: 11px;
+    color: #9ca3af;
+  }
+
+  .code-body {
+    padding: 12px 14px 14px;
+    background: radial-gradient(circle at top left, #0f172a, #020617 70%);
+    font-size: 11px;
+    line-height: 1.7;
+    color: #e5e7eb;
+  }
+
+  .code-line {
+    white-space: nowrap;
+  }
+
+  .code-line-faded {
+    color: #6b7280;
+  }
+
+  .code-line-active {
+    position: relative;
+    padding-left: 10px;
+  }
+
+  .code-line-active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    bottom: 3px;
+    width: 3px;
+    border-radius: 999px;
+    background: linear-gradient(to bottom, #6366f1, #3b82f6);
+  }
+
+  /* Cursor animation */
+  .code-cursor {
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background: #e5e7eb;
+    animation: blinkCursor 1s steps(2, start) infinite;
+  }
+
+  @keyframes blinkCursor {
+    0%, 50% { opacity: 1; }
+    50.01%, 100% { opacity: 0; }
+  }
+
+  /* Floating animation */
+  @keyframes floatWindow {
+    0% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(4px, -6px, 0); }
+    100% { transform: translate3d(-4px, -2px, 0); }
+  }
+
+  /* Mobile layout */
+  @media (max-width: 900px) {
+    .hero-grid {
+      flex-direction: column;
     }
   }
 }
