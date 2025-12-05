@@ -137,6 +137,59 @@ All colors MUST be HSL.
     }
   }
 
+  /* Snowplow-style flowing lines background */
+  .hero-flow-lines {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .flow-svg {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    left: -50%;
+    top: 0;
+  }
+
+  .flow-path {
+    opacity: 0.6;
+  }
+
+  .flow-path-1 {
+    animation: flowHorizontal 30s linear infinite;
+  }
+
+  .flow-path-2 {
+    animation: flowHorizontal 40s linear infinite reverse;
+  }
+
+  .flow-path-3 {
+    animation: flowHorizontal 35s linear infinite;
+    animation-delay: -10s;
+  }
+
+  .flow-path-4 {
+    animation: flowHorizontal 45s linear infinite reverse;
+    animation-delay: -5s;
+  }
+
+  .flow-path-5 {
+    animation: flowHorizontal 38s linear infinite;
+    animation-delay: -15s;
+  }
+
+  @keyframes flowHorizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(25%);
+    }
+  }
+
   /* Code window mockup */
   .code-window {
     width: 100%;
