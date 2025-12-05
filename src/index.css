@@ -85,7 +85,7 @@ All colors MUST be HSL.
   .hero-wrapper {
     position: relative;
     overflow: hidden;
-    padding-block: 64px;
+    padding-block: 100px 120px;
   }
 
   .hero-grid {
