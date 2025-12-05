@@ -93,7 +93,7 @@ export const Hero = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-[1.4] tracking-tight max-w-[760px] mb-12 text-center mx-auto">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.8] tracking-tight max-w-[760px] mb-12 text-center mx-auto">
             Purpose Driven <span className="text-primary">Software</span>,
             <br />
             Built for <span className="text-primary">Impact</span>.
