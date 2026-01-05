@@ -1,8 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { User } from "lucide-react";
+import brettImage from "@/assets/brett-ausmeier.jpg";
 
 const team = [
-  { name: "Brett Ausmeier", role: "Co-Founder & CTO" },
+  { name: "Brett Ausmeier", role: "Co-Founder & CTO", image: brettImage },
   { name: "Trevor Gowing", role: "Co-Founder & CEO" },
   { name: "Barry Dwyer", role: "Lead Full Stack Software Engineer" },
   { name: "Dagmar Timler", role: "Lead Full Stack Software Engineer" },
@@ -28,9 +30,14 @@ export const Team = () => {
             <Card key={member.name} className="border-2 hover:border-primary/50 transition-colors">
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <User className="h-6 w-6 text-primary" />
-                  </div>
+                  <Avatar className="h-12 w-12">
+                    {member.image ? (
+                      <AvatarImage src={member.image} alt={member.name} className="object-cover" />
+                    ) : null}
+                    <AvatarFallback className="bg-primary/10">
+                      <User className="h-6 w-6 text-primary" />
+                    </AvatarFallback>
+                  </Avatar>
                   <div>
                     <h3 className="font-semibold text-lg leading-tight">{member.name}</h3>
                     <p className="text-sm text-muted-foreground">{member.role}</p>
