@@ -7,6 +7,7 @@ import barryImage from "@/assets/barry-dwyer.jpg";
 import dagmarImage from "@/assets/dagmar-timler.jpg";
 import jessImage from "@/assets/jess-verheul.jpg";
 import siyasangaImage from "@/assets/siyasanga-mtshokotsha.jpg";
+import marcImage from "@/assets/marc-de-decker.jpg";
 
 const team = [
   { name: "Brett Ausmeier", role: "Co-Founder & CTO", image: brettImage },
@@ -15,7 +16,7 @@ const team = [
   { name: "Dagmar Timler", role: "Lead Full Stack Software Engineer", image: dagmarImage },
   { name: "Siyasanga Mtshokotsha", role: "Full Stack Software Engineer", image: siyasangaImage },
   { name: "Mfundo Cele", role: "Full Stack Software Engineer" },
-  { name: "Marc De Decker", role: "Business Development Specialist" },
+  { name: "Marc De Decker", role: "Business Development Specialist", image: marcImage },
   { name: "Jess Verheul", role: "Support Operations Manager", image: jessImage },
   { name: "Inge Heide", role: "Personal Assistant" },
 ];
