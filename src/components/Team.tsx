@@ -5,6 +5,7 @@ import brettImage from "@/assets/brett-ausmeier.jpg";
 import trevorImage from "@/assets/trevor-gowing.jpg";
 import barryImage from "@/assets/barry-dwyer.jpg";
 import dagmarImage from "@/assets/dagmar-timler.jpg";
+import jessImage from "@/assets/jess-verheul.jpg";
 
 const team = [
   { name: "Brett Ausmeier", role: "Co-Founder & CTO", image: brettImage },
@@ -14,7 +15,7 @@ const team = [
   { name: "Siyasanga Mtshokotsha", role: "Full Stack Software Engineer" },
   { name: "Mfundo Cele", role: "Full Stack Software Engineer" },
   { name: "Marc De Decker", role: "Business Development Specialist" },
-  { name: "Jess Verheul", role: "Support Operations Manager" },
+  { name: "Jess Verheul", role: "Support Operations Manager", image: jessImage },
   { name: "Inge Heide", role: "Personal Assistant" },
 ];
 
