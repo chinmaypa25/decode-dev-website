@@ -3,11 +3,12 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { User } from "lucide-react";
 import brettImage from "@/assets/brett-ausmeier.jpg";
 import trevorImage from "@/assets/trevor-gowing.jpg";
+import barryImage from "@/assets/barry-dwyer.jpg";
 
 const team = [
   { name: "Brett Ausmeier", role: "Co-Founder & CTO", image: brettImage },
   { name: "Trevor Gowing", role: "Co-Founder & CEO", image: trevorImage },
-  { name: "Barry Dwyer", role: "Lead Full Stack Software Engineer" },
+  { name: "Barry Dwyer", role: "Lead Full Stack Software Engineer", image: barryImage },
   { name: "Dagmar Timler", role: "Lead Full Stack Software Engineer" },
   { name: "Siyasanga Mtshokotsha", role: "Full Stack Software Engineer" },
   { name: "Mfundo Cele", role: "Full Stack Software Engineer" },
