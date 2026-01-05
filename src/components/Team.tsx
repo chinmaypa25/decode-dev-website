@@ -2,10 +2,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { User } from "lucide-react";
 import brettImage from "@/assets/brett-ausmeier.jpg";
+import trevorImage from "@/assets/trevor-gowing.jpg";
 
 const team = [
   { name: "Brett Ausmeier", role: "Co-Founder & CTO", image: brettImage },
-  { name: "Trevor Gowing", role: "Co-Founder & CEO" },
+  { name: "Trevor Gowing", role: "Co-Founder & CEO", image: trevorImage },
   { name: "Barry Dwyer", role: "Lead Full Stack Software Engineer" },
   { name: "Dagmar Timler", role: "Lead Full Stack Software Engineer" },
   { name: "Siyasanga Mtshokotsha", role: "Full Stack Software Engineer" },
