@@ -4,12 +4,13 @@ import { User } from "lucide-react";
 import brettImage from "@/assets/brett-ausmeier.jpg";
 import trevorImage from "@/assets/trevor-gowing.jpg";
 import barryImage from "@/assets/barry-dwyer.jpg";
+import dagmarImage from "@/assets/dagmar-timler.jpg";
 
 const team = [
   { name: "Brett Ausmeier", role: "Co-Founder & CTO", image: brettImage },
   { name: "Trevor Gowing", role: "Co-Founder & CEO", image: trevorImage },
   { name: "Barry Dwyer", role: "Lead Full Stack Software Engineer", image: barryImage },
-  { name: "Dagmar Timler", role: "Lead Full Stack Software Engineer" },
+  { name: "Dagmar Timler", role: "Lead Full Stack Software Engineer", image: dagmarImage },
   { name: "Siyasanga Mtshokotsha", role: "Full Stack Software Engineer" },
   { name: "Mfundo Cele", role: "Full Stack Software Engineer" },
   { name: "Marc De Decker", role: "Business Development Specialist" },
